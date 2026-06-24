@@ -1,0 +1,54 @@
+img{
+    max-width: 100%;
+}
+.item{
+    width: calc(25% - 30px);
+    float: left;
+    margin: 15px;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 5px #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+.xmen{
+    background-color:#ffe4c4;
+    /* animation-name: xoayxoay;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; */
+}
+.item:hover{
+    background-color: #7fffd4;
+    /* transform: rotate(90deg); */
+    /* transform: scale(1.05); */
+    transform: translate(50px,50px);
+}
+@keyframes xoayxoay {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fan{
+    text-align: center;
+}
+.fan img{
+    width: 500px;
+}
+.box-xoay img{
+    animation-name: xoayxoay;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
